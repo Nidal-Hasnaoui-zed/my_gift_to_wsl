@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio.css">
+    <title>Doui Wissal</title>
+    <script src="learn.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="favi.png" type="image/png">
+</head>
+<body>
+    <header class="header">
+        <a href="#home" class="logo">DAOUI <span>Wissal</span></a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#education">Education</a>
+            <a href="#services">Services</a>
+            <a href="#testimonials">Team Work</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, It's <span>Wissal</span></h1>
+            <h3 class="text-animation"> I'm a <span></span></h3>
+            <p>Actuellement étudiant à l'Institut de Technologie Appliquée en diagnostic et
+                électronique automobile, je développe des compétences techniques en
+                réparation et diagnostic des systèmes électroniques des véhicules.
+                Parallèlement, je suis formé à la Croix-Rouge, acquérant des compétences en
+                premiers secours et gestion des urgences. Passionné par la technologie , je suis
+                déterminé à perfectionner mes compétences pratiques et théoriques
+            </p>
+
+            <div class="social-icons">
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/Nidal-Hasnaoui-zed"><i class='bx bxl-github'></i></a>
+                <a href="https://www.instagram.com/w__geuss?igsh=b2F2aDhieTlvdzNo&utm_source=qr"><i class='bx bxl-instagram'></i></a>
+                <a href="https://x.com/Mechavelly"><i class='bx bxl-twitter'></i></a>
+            </div>
+            <div class="btn-group">
+                <a href="#" class="btn">Hire</a>
+                <a href="#contact" class="btn">Contact</a>
+            </div>
+        </div>
+
+        <div class="home-img">
+            <img src="wsl3.jpg" alt="Profile Image">
+        </div>
+    </section>
+    <section class="education" id="education">
+        <h2 class="heading">Education</h2>
+
+        <div class="timeline-items">
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date">2024</div>
+                    <div class="timeline-content">
+                        <h3>High School</h3>
+                        <p>Baccalaureate in Physical Sciences  .  <br>
+                            Year: 2024 . <br>
+                            Institution: Zerktouni High School <br>
+                        </p>
+                    </div>
+                
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date">2025</div>
+                    <div class="timeline-content">
+                        <h3>Diagnostic et électronique embarquée</h3>
+                        <p>
+                            Actuellement, je poursuis mes études à l'Institut de Technologie
+                            Appliquée, dans la spécialité de diagnostic et d'électronique
+                            automobile, où je développe des compétences pratiques et théoriques
+                            liées à la maintenance et au diagnostic des systèmes électroniques des
+                            véhicules.
+                        </p>
+                    </div>
+                
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date">2025</div>
+                    <div class="timeline-content">
+                        <h3>croissant rouge </h3>
+                        <p>
+                            En parallèle de mes études, je suis également formé au sein de la
+                            Croix-Rouge, où j'acquiers des compétences en premiers secours et
+                            gestion des urgences, ce qui renforce ma capacité à intervenir
+                            rapidement et efficacement en cas de besoin
+                        </p>
+                    </div>
+                
+            </div>
+
+           
+
+
+        </div>
+    </section>
+    <section class="services" id="services">
+        <h2 class="heading">Skills</h2>
+        
+        <div class="services-container">
+            <div class="service-box">
+                <div class="service-info">
+                     <h4>Diagnostic et électronique</h4>
+                     <p>
+                        apprentissage du diagnostic des
+                        pannes électroniques des
+                        véhicules.
+                     </p>
+                </div>
+            </div>
+
+
+            <div class="service-box">
+                <div class="service-info">
+                     <h4>croissant rouge </h4>
+                     <p>je suis également formé au sein de la
+                        Croix-Rouge, où j'acquiers des compétences en premiers secours et
+                        gestion des urgences, ce qui renforce ma capacité à intervenir
+                        rapidement et efficacement en cas de besoi
+                     </p>
+                </div>
+            </div>
+
+
+          
+
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navbarLinks = document.querySelectorAll('.navbar a');
+            navbarLinks.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(targetId);
+                    window.scrollTo({
+                        top: targetSection.offsetTop - document.querySelector('.header').offsetHeight,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+
+    <section class="testimonials" id="testimonials">
+        <div class="testimonials-box">
+            <h2 class="heading">Message from nidal</h2>
+
+            <div class="wrapper">
+               
+
+                <div class="testimonial-item">
+                    <img src="my pic.jpg" alt="">
+                    <h2>HASNAOUI Nidal</h2>
+                    <div class="rating">
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                    </div>
+                    <p>
+                        bnty wessal kayfa lhal , andy bzaaaf myatgal o ila jit brit ngolo lik
+                        f wtsp maratkhalinich o maratsm3ich liya ana jit ngolo like hna abnty 
+                        sawbt like had site web bach ndwi maak o meme temp mn hna l9odam nbdlo 
+                        bach i welly cv dyalk , haja li brit ngolk awissal kanbrik bzaaaf o kaynin 
+                        machakil bintna o hadchi normal ms had lmara 9ararty tmchi dema wa9ila bidon 
+                        sabab ms mandi mandir kayn andy chella maytgal ms 9taltini , lbreh mli knt kandwi 
+                        maak ala hasab tvoti aliya kan rir sba bach tchofu hada o moraha golty liya 
+                        hadra 9asha fchlatni ma9dartch db ta nzid nktab , ms haja whda wlh ila mli mchity 
+                        mab9it gad ndir chi haja ta bnadem mab9itch 9ad alih drabt chi ymaat rassy 
+                        ms ma9dartch nsak rir kanramch kantfakrek ama la brit n3as khlas o hlamat bik 
+                        bzaaf dyal lmarat moraha ma9dartch nkml bla bik o mchit ldar 5j ylh jit lyoum 
+                        khrajt glast maa drari abach nsak ms ma9adrtch ga3 tswirtek mabratch thayd liy a 
+                        mn 9odam 3ini o db rja3t gales arassy , o brit ngolk mn ktrat ma twahchtek flwel 
+                        knt 9ad ncontroli rassy db la mab9itch kan9ad nchad andy rak arfa dok lmachakil
+                        dyl dar o khosasn lwalid knt flwel kan3raf ndwi db kahltha maa kolchi ta mn lwaid 
+                        3it bzaaaaf wlh ana db jit 3awdlt lik rir li 9dart alih ama chi hwayj khrin 
+                        mn9darch ngolhom kif ma kaygolo ma khafiya a3dam mhm abnty brit ngolk 
+                        khtariti tmchi o 9ashty 9albek o hadretk dema kant kanchdek ms db marachdekch 
+                        ankhlik tkhtary rahtek fin wah bssh kanbrik ms makhasnich nkon anani li kaybrik 
+                        kaybrik tkoni farhana o mertaha o ana barik tkoni haka wkaha maratkonich maya 
+                        hania mhm ana li nakol da9a machi nty hadi aham haja andy mn nhar bdina lahm m3ak 
+                        abnty o kanbrik bzaaaf wlh . 
+                        ah ha9a nsit magoltch nty hiya 3iniya bach kanchof wlh o dema babi mhlol 
+                        jihtek wlh anb9a dema nbrik o dema kantfakerk o dema babi mhlol jihtek 
+                        htajity ay haja ana maak briti nraj3o babi mhlol jihtek omro itsed o akhir haja
+                        lahdak lah o briti nraj3o ana maak o omry anchof fchiwhda rirek wlh o nhr nhayd dik wsl 
+                        mn insta mtgolich rah nsani dik sa3a ankon 9dart nrja3 normal bla mtkoni fhyty o 
+                        hasi s3iba o bzaaaf o makndench anani an9dar ndirha ama bach nsak mostahil ila 
+                        briti tsalhi ha ana abnty sifty liya ms o ila mabritich metseftich liya rir 9ray 
+                        hadchi o srir la knty bssh bara tmchi o ila knty bara tb9ay maya dwi maya dik sa3a 
+                        an3awd ntelbk ta tkoni bara traj3i ada dwi maya mach mnfrahch rir hakak ama ila 
+                        mal9itch msj dylk rah anfham rassy o o anmchi fhali fmara had kmara wlh omrni n3awd
+                        nsad3ek o akhir mara aykon bintna chi contact hiya haddy ila 9ararty tmchi ila f 2 cas 
+                        briti tsalhi ola khastej chi haja ana maak dik sa3a hadi akhir hadra liya abnty
+                        ty hiya deriya li brit mn nyty o awel mara nbri brit wessal ana mahdod wlh ms 
+                        ala hssab ila kmlna rah atb9ay bnty o momo dyal 3iniya ila ma9darich rah antfahmek 
+                        o ankhlik tmchi t3ichi hyatek b3ida aliya , o akhir haja hiya ila sda9 liya 
+                        had l3jab rah anji ldarkom kif ma knt golt lik hitach britek mn nyty wlh o mabarich ndhak 
+                        alik barik tb9ay maya dema hta nmout o wkha ansaliw omry nsal fslaty knt khayf mn haja whda 
+                        ila mchit ana o trat lik chi haja ola chi blan ola wlad lharma kolchi khayf elik 
+                        mnjihto ms andir l9adiya dyal lwalida galt liya nhar ba3dty aliya o ma9dartch nhdik 
+                        knt khayfa alik bzaaaf ms tlabt lah ihdik b3yno li makatn3ach o ana hadchi li andir maak 
+                        khlaitek f id lah lah ihfdek o ihjbek o iyseer lik hadu akhir hadra liya abnty . 
+                        kanbrik bzaaaf o omrni ansak nkhlik db ila britini ana maak ila ma9dartich traj3i 
+                        rir mtgoli liya walo bach mnzidch nmrad anan anfham rassy o nkhlik f id lah db , lah i3awnek 
+                        o iyser like .
+                    </p>
+                </div>
+
+               
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form action="">
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name">
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class="input-box">
+                    <input type="number" placeholder="Phone Number">
+                    <input type="text" placeholder="Subject">
+                </div>
+            </div>
+            <div class="input-group-2">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <input  type="submit" value="Send Messge" class="btn">
+            </div>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="social">
+            <a href="#"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/Nidal-Hasnaoui-zed"><i class='bx bxl-github'></i></a>
+            <a href="https://www.instagram.com/w__geuss?igsh=b2F2aDhieTlvdzNo&utm_source=qr"><i class='bx bxl-instagram'></i></a>
+            <a href="https://x.com/Mechavelly"><i class='bx bxl-twitter'></i></a>
+        </div>
+
+        <ul class="list">
+            <li>
+                <a href="#">FAQ</a>
+            </li>
+            <li>
+                <a href="#">Services</a>
+            </li>
+            <li>
+                <a href="#">About Me</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+            <li>
+                <a href="#">Testimonials</a>
+            </li>
+        </ul>
+        <p class="copyright">
+           ©Daoui Wessal // All Rights Reserved.
+        </p>
+    </footer>
+</body>
+</html>
+
